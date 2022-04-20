@@ -14,7 +14,7 @@
   <script>
     window.addEventListener('message', receiver, false);
     function receiver(e) {
-      if (e.origin == '') {
+      if (e.origin == '*') {
         if (e.data == 'Hola world') {
            e.source.postMessage('Hola', e.origin);
         } else {
