@@ -12,8 +12,8 @@
   </head>
   
   <script>
-    window.addEventListener('message', 
-     function (e) {
+    window.addEventListener('message', receiver, false) {
+     function receiver(e) {
       alert(e.data);
       console.log(e.data);
      }
