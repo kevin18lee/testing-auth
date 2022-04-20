@@ -14,11 +14,8 @@
   <script>
     window.addEventListener('message', receiver, false);
     function receiver(e) {
-      if (e.origin == '*') {
-        if (e.data == 'Hola world') {
-           e.source.postMessage('Hola', e.origin);
-        } else {
-        alert(e.data);
+      alert(e.data);
+      console.log(e.data);
       }
     }
   }
